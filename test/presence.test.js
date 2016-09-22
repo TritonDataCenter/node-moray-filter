@@ -50,7 +50,7 @@ test('escape value only in toString()', function (t) {
   });
   t.ok(f);
   t.equal(f.attribute, 'fo)o');
-  t.equal(f.toString(), '(fo\\29o=*)');
+  t.equal(f.toString(), '(fo\\)o=*)');
   t.end();
 });
 

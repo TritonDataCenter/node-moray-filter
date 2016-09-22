@@ -85,7 +85,7 @@ test('escape value only in toString()', function (t) {
   t.ok(f);
   t.equal(f.attribute, 'foo');
   t.equal(f.value, 'ba(r)');
-  t.equal(f.toString(), '(foo=ba\\28r\\29)');
+  t.equal(f.toString(), '(foo=ba\\(r\\))');
   t.end();
 });
 
@@ -131,16 +131,16 @@ test('escape EqualityFilter inputs', function (t) {
 
   t.equal(f.attribute, '(|(foo');
   t.equal(f.value, 'bar))(');
-  t.equal(f.toString(), '(\\28|\\28foo=bar\\29\\29\\28)');
+  t.equal(f.toString(), '(\\(|\\(foo=bar\\)\\)\\()');
 
   f.value = new Buffer([97, 115, 100, 102, 41, 40, 0, 255]);
-  t.equal(f.toString(), '(\\28|\\28foo=\\61\\73\\64\\66\\29\\28\\00\\ff)');
+  t.equal(f.toString(), '(\\(|\\(foo=\\61\\73\\64\\66\\29\\28\\00\\ff)');
 
   f.value = new Buffer([195, 40]);
-  t.equal(f.toString(), '(\\28|\\28foo=\\c3\\28)');
+  t.equal(f.toString(), '(\\(|\\(foo=\\c3\\28)');
 
   f.value = new Buffer([195, 177]);
-  t.equal(f.toString(), '(\\28|\\28foo=ñ)');
+  t.equal(f.toString(), '(\\(|\\(foo=ñ)');
   t.end();
 });
 

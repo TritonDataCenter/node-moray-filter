@@ -4,14 +4,15 @@
     "Mark Cavage <mcavage@gmail.com>",
     "Cody Peter Mello <cody.mello@joyent.com>"
   ],
-  "name": "ldap-filter",
-  "homepage": "http://ldapjs.org",
-  "description": "API for handling LDAP-style filters",
-  "version": "0.3.3",
+  "name": "moray-filter",
+  "homepage": "https://github.com/joyent/node-moray-filter",
+  "description": "API for handling Moray-style filters",
+  "keywords": [ "moray" ],
+  "version": "1.0.0",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/pfmooney/node-ldap-filter.git"
+    "url": "https://github.com/joyent/node-moray-filter.git"
   },
   "main": "lib/index.js",
   "directories": {

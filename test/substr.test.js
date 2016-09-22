@@ -69,7 +69,7 @@ test('escape value only in toString()', function (t) {
   t.equal(f.any[0], 'zi)g');
   t.equal(f.any[1], 'z(ag');
   t.equal(f.final, '(baz)');
-  t.equal(f.toString(), '(fo\\28o=ba\\28r\\29*zi\\29g*z\\28ag*\\28baz\\29)');
+  t.equal(f.toString(), '(fo\\(o=ba\\(r\\)*zi\\)g*z\\(ag*\\(baz\\))');
   t.end();
 });
 

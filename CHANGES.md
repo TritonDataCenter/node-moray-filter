@@ -1,4 +1,12 @@
-# ldap-filter Changelog
+# moray-filter Changelog
+
+## 1.0.0
+
+- Initial release after forking from
+  [ldap-filter](https://github.com/pfmooney/node-ldap-filter) v0.3.3,
+  and adding back in behaviour from v0.2.0 that Moray clients expect.
+
+# ldap-filter Changelog (pre-fork)
 
 ## 0.3.3
 

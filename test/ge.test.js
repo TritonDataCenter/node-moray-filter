@@ -56,7 +56,7 @@ test('escape value only in toString()', function (t) {
   t.ok(f);
   t.equal(f.attribute, 'foo');
   t.equal(f.value, 'ba(r)');
-  t.equal(f.toString(), '(foo>=ba\\28r\\29)');
+  t.equal(f.toString(), '(foo>=ba\\(r\\))');
   t.end();
 });
 
