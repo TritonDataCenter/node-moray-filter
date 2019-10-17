@@ -1,5 +1,5 @@
 <!--
-    Copyright (c) 2016, Joyent, Inc.
+    Copyright 2019 Joyent, Inc.
 -->
 
 # moray-filter
@@ -9,7 +9,7 @@ This repository is part of the Joyent Triton and Joyent Manta projects. See the
 [Manta](https://github.com/joyent/manta/blob/master/CONTRIBUTING.md)
 contributing guidelines and general documentation at the main [Triton]
 (https://github.com/joyent/triton) and [Manta](http://github.com/joyent/manta)
-project pages. *Do not use GitHub PRs*.
+project pages.
 
 ## Overview
 
